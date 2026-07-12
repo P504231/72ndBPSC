@@ -19,18 +19,18 @@ export const Player = () => {
   const [showFullDescription, setShowFullDescription] = useState(false);
   const [copied, setCopied] = useState(false);
 
-  const handleShare = async () => {
-    try {
-      await navigator.clipboard.writeText(window.location.href);
-      setCopied(true);
+  // const handleShare = async () => {
+  //   try {
+  //     await navigator.clipboard.writeText(window.location.href);
+  //     setCopied(true);
 
-      setTimeout(() => {
-        setCopied(false);
-      }, 2000);
-    } catch (err) {
-      console.error(err);
-    }
-  };
+  //     setTimeout(() => {
+  //       setCopied(false);
+  //     }, 2000);
+  //   } catch (err) {
+  //     console.error(err);
+  //   }
+  // };
 
   return (
     <motion.main
@@ -105,14 +105,14 @@ export const Player = () => {
           </div>
 
           {/* Share */}
-
+{/* 
           <button
             onClick={handleShare}
             className="mt-6 inline-flex items-center gap-2 rounded-full border border-slate-300 dark:border-slate-700 px-5 py-2.5 text-sm font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition"
           >
             <FiShare2 />
             {copied ? "Copied!" : "Share"}
-          </button>
+          </button> */}
 
         </div>
 
