@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 import { Navbar } from './components/Navbar';
-import { Home } from './pages/Home';
+import { HomePage } from './pages/HomePage';
+import { PlaylistPage } from './pages/PlaylistPage';
 import { Player } from './pages/Player';
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
         <BrowserRouter>
           <Navbar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
           <Routes>
-            <Route path="/" element={<Home searchQuery={searchQuery} />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/playlist/:playlistId" element={<PlaylistPage searchQuery={searchQuery} />} />
             <Route path="/watch/:id" element={<Player />} />
           </Routes>
         </BrowserRouter>

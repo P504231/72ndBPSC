@@ -39,7 +39,7 @@ export const Navbar = ({ searchQuery, setSearchQuery }) => {
 
             <h1 className="text-lg font-bold tracking-tight text-slate-900 dark:text-white">
 
-              72ⁿᵈ BPSC Prelims
+              Study & Chill
 
             </h1>
 
