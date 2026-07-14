@@ -39,7 +39,7 @@ export const Navbar = ({ searchQuery, setSearchQuery }) => {
 
             <h1 className="text-lg font-bold tracking-tight text-slate-900 dark:text-white">
 
-              Study & Chill
+              Study👩🏻‍💻 & Chill😌
 
             </h1>
 
