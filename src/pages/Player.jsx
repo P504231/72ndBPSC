@@ -122,13 +122,7 @@ export const Player = () => {
   // Handle resilient navigation back to the previous page
   const handleBackNavigation = () => {
     if (window.history.state && window.history.state.idx > 0) {
-      const hasIframeHistoryTrap = window.history.length > (window.history.state.idx + 1);
-      
-      if (hasIframeHistoryTrap) {
-        navigate(-2);
-      } else {
         navigate(-1);
-      }
     } else {
       navigate("/dashboard"); 
     }
