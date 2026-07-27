@@ -165,7 +165,7 @@ const PlaylistCard = memo(({ playlist, index }) => (
             <span>Curated Picks</span>
           </div>
           <div className="flex items-center gap-1 text-sm font-semibold text-red-600 dark:text-red-400 opacity-0 group-hover:opacity-100 transform translate-x-2 group-hover:translate-x-0 transition-all duration-300">
-            <span>Listen</span>
+            <span>Watch</span>
             <FiChevronRight size={16} />
           </div>
         </div>
