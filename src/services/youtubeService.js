@@ -26,7 +26,7 @@ export const getPlaylistVideos = async (playlistId, pageToken = '') => {
       .map((item) => item.contentDetails.videoId)
       .join(',');
 
-    // 2. Fetch detailed video stats (duration, views, etc.)
+    // 2. Fetch detailed video stats (duration, views, etc..)
     const statsResponse = await youtubeClient.get('/videos', {
       params: {
         part: 'snippet,contentDetails,statistics',
